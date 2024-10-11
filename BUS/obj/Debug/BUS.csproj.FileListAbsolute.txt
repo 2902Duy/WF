@@ -1,0 +1,15 @@
+C:\Users\ThinkPad\OneDrive\Desktop\program\GUI\BUS\bin\Debug\BUS.dll.config
+C:\Users\ThinkPad\OneDrive\Desktop\program\GUI\BUS\bin\Debug\BUS.dll
+C:\Users\ThinkPad\OneDrive\Desktop\program\GUI\BUS\bin\Debug\BUS.pdb
+C:\Users\ThinkPad\OneDrive\Desktop\program\GUI\BUS\bin\Debug\DAL.dll
+C:\Users\ThinkPad\OneDrive\Desktop\program\GUI\BUS\bin\Debug\EntityFramework.dll
+C:\Users\ThinkPad\OneDrive\Desktop\program\GUI\BUS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ThinkPad\OneDrive\Desktop\program\GUI\BUS\bin\Debug\DAL.pdb
+C:\Users\ThinkPad\OneDrive\Desktop\program\GUI\BUS\bin\Debug\DAL.dll.config
+C:\Users\ThinkPad\OneDrive\Desktop\program\GUI\BUS\bin\Debug\EntityFramework.xml
+C:\Users\ThinkPad\OneDrive\Desktop\program\GUI\BUS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ThinkPad\OneDrive\Desktop\program\GUI\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\ThinkPad\OneDrive\Desktop\program\GUI\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\OneDrive\Desktop\program\GUI\BUS\obj\Debug\BUS.csproj.Up2Date
+C:\Users\ThinkPad\OneDrive\Desktop\program\GUI\BUS\obj\Debug\BUS.dll
+C:\Users\ThinkPad\OneDrive\Desktop\program\GUI\BUS\obj\Debug\BUS.pdb

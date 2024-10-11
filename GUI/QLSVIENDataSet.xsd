@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QLSVIENDataSet" targetNamespace="http://tempuri.org/QLSVIENDataSet.xsd" xmlns:mstns="http://tempuri.org/QLSVIENDataSet.xsd" xmlns="http://tempuri.org/QLSVIENDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLSVIENConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLSVIENConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.GUI.Properties.Settings.GlobalReference.Default.QLSVIENConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FacultyTableAdapter" GeneratorDataComponentClassName="FacultyTableAdapter" Name="Faculty" UserDataComponentName="FacultyTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLSVIENConnectionString (Settings)" DbObjectName="QLSVIEN.dbo.Faculty" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT FacultyName FROM dbo.Faculty</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="FacultyName" DataSetColumn="FacultyName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MajorTableAdapter" GeneratorDataComponentClassName="MajorTableAdapter" Name="Major" UserDataComponentName="MajorTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLSVIENConnectionString (Settings)" DbObjectName="QLSVIEN.dbo.Major" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MajorName FROM dbo.Major</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MajorName" DataSetColumn="MajorName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="StudentTableAdapter" GeneratorDataComponentClassName="StudentTableAdapter" Name="Student" UserDataComponentName="StudentTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLSVIENConnectionString (Settings)" DbObjectName="QLSVIEN.dbo.Student" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Student] WHERE (([StudentID] = @Original_StudentID) AND ([FullName] = @Original_FullName) AND ((@IsNull_AverageScore = 1 AND [AverageScore] IS NULL) OR ([AverageScore] = @Original_AverageScore)) AND ((@IsNull_Avartar = 1 AND [Avartar] IS NULL) OR ([Avartar] = @Original_Avartar)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_StudentID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="StudentID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_FullName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FullName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_AverageScore" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="AverageScore" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_AverageScore" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="AverageScore" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Avartar" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Avartar" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Avartar" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Avartar" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Student] ([StudentID], [FullName], [AverageScore], [Avartar]) VALUES (@StudentID, @FullName, @AverageScore, @Avartar);
+SELECT StudentID, FullName, AverageScore, Avartar FROM Student WHERE (StudentID = @StudentID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@StudentID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="StudentID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@FullName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FullName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@AverageScore" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="AverageScore" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Avartar" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Avartar" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT StudentID, FullName, AverageScore, Avartar FROM dbo.Student</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Student] SET [StudentID] = @StudentID, [FullName] = @FullName, [AverageScore] = @AverageScore, [Avartar] = @Avartar WHERE (([StudentID] = @Original_StudentID) AND ([FullName] = @Original_FullName) AND ((@IsNull_AverageScore = 1 AND [AverageScore] IS NULL) OR ([AverageScore] = @Original_AverageScore)) AND ((@IsNull_Avartar = 1 AND [Avartar] IS NULL) OR ([Avartar] = @Original_Avartar)));
+SELECT StudentID, FullName, AverageScore, Avartar FROM Student WHERE (StudentID = @StudentID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@StudentID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="StudentID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@FullName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FullName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@AverageScore" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="AverageScore" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Avartar" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Avartar" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_StudentID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="StudentID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_FullName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FullName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_AverageScore" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="AverageScore" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_AverageScore" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="AverageScore" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Avartar" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Avartar" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Avartar" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Avartar" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="StudentID" DataSetColumn="StudentID" />
+              <Mapping SourceColumn="FullName" DataSetColumn="FullName" />
+              <Mapping SourceColumn="AverageScore" DataSetColumn="AverageScore" />
+              <Mapping SourceColumn="Avartar" DataSetColumn="Avartar" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QLSVIENDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="QLSVIENDataSet" msprop:Generator_DataSetName="QLSVIENDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Faculty" msprop:Generator_RowEvHandlerName="FacultyRowChangeEventHandler" msprop:Generator_RowDeletedName="FacultyRowDeleted" msprop:Generator_RowDeletingName="FacultyRowDeleting" msprop:Generator_RowEvArgName="FacultyRowChangeEvent" msprop:Generator_TablePropName="Faculty" msprop:Generator_RowChangedName="FacultyRowChanged" msprop:Generator_RowChangingName="FacultyRowChanging" msprop:Generator_TableClassName="FacultyDataTable" msprop:Generator_RowClassName="FacultyRow" msprop:Generator_TableVarName="tableFaculty" msprop:Generator_UserTableName="Faculty">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FacultyName" msprop:Generator_ColumnPropNameInRow="FacultyName" msprop:Generator_ColumnPropNameInTable="FacultyNameColumn" msprop:Generator_ColumnVarNameInTable="columnFacultyName" msprop:Generator_UserColumnName="FacultyName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Major" msprop:Generator_RowEvHandlerName="MajorRowChangeEventHandler" msprop:Generator_RowDeletedName="MajorRowDeleted" msprop:Generator_RowDeletingName="MajorRowDeleting" msprop:Generator_RowEvArgName="MajorRowChangeEvent" msprop:Generator_TablePropName="Major" msprop:Generator_RowChangedName="MajorRowChanged" msprop:Generator_RowChangingName="MajorRowChanging" msprop:Generator_TableClassName="MajorDataTable" msprop:Generator_RowClassName="MajorRow" msprop:Generator_TableVarName="tableMajor" msprop:Generator_UserTableName="Major">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MajorName" msprop:Generator_ColumnPropNameInRow="MajorName" msprop:Generator_ColumnPropNameInTable="MajorNameColumn" msprop:Generator_ColumnVarNameInTable="columnMajorName" msprop:Generator_UserColumnName="MajorName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Student" msprop:Generator_RowEvHandlerName="StudentRowChangeEventHandler" msprop:Generator_RowDeletedName="StudentRowDeleted" msprop:Generator_RowDeletingName="StudentRowDeleting" msprop:Generator_RowEvArgName="StudentRowChangeEvent" msprop:Generator_TablePropName="Student" msprop:Generator_RowChangedName="StudentRowChanged" msprop:Generator_RowChangingName="StudentRowChanging" msprop:Generator_TableClassName="StudentDataTable" msprop:Generator_RowClassName="StudentRow" msprop:Generator_TableVarName="tableStudent" msprop:Generator_UserTableName="Student">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StudentID" msprop:Generator_ColumnPropNameInRow="StudentID" msprop:Generator_ColumnPropNameInTable="StudentIDColumn" msprop:Generator_ColumnVarNameInTable="columnStudentID" msprop:Generator_UserColumnName="StudentID" type="xs:int" />
+              <xs:element name="FullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_UserColumnName="FullName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AverageScore" msprop:Generator_ColumnPropNameInRow="AverageScore" msprop:Generator_ColumnPropNameInTable="AverageScoreColumn" msprop:Generator_ColumnVarNameInTable="columnAverageScore" msprop:Generator_UserColumnName="AverageScore" type="xs:double" minOccurs="0" />
+              <xs:element name="Avartar" msprop:Generator_ColumnPropNameInRow="Avartar" msprop:Generator_ColumnPropNameInTable="AvartarColumn" msprop:Generator_ColumnVarNameInTable="columnAvartar" msprop:Generator_UserColumnName="Avartar" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Student" />
+      <xs:field xpath="mstns:StudentID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
