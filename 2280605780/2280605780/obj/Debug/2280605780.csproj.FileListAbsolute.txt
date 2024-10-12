@@ -1,0 +1,16 @@
+C:\Users\Administrator\Desktop\2280605780\2280605780\bin\Debug\2280605780.exe.config
+C:\Users\Administrator\Desktop\2280605780\2280605780\bin\Debug\2280605780.exe
+C:\Users\Administrator\Desktop\2280605780\2280605780\bin\Debug\2280605780.pdb
+C:\Users\Administrator\Desktop\2280605780\2280605780\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\2280605780\2280605780\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\2280605780\2280605780\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\2280605780\2280605780\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\2280605780\2280605780\obj\Debug\2280605780.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\2280605780\2280605780\obj\Debug\_2280605780.Form1.resources
+C:\Users\Administrator\Desktop\2280605780\2280605780\obj\Debug\_2280605780.Properties.Resources.resources
+C:\Users\Administrator\Desktop\2280605780\2280605780\obj\Debug\2280605780.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\2280605780\2280605780\obj\Debug\2280605780.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\2280605780\2280605780\obj\Debug\2280605780.csproj.Up2Date
+C:\Users\Administrator\Desktop\2280605780\2280605780\obj\Debug\2280605780.exe
+C:\Users\Administrator\Desktop\2280605780\2280605780\obj\Debug\2280605780.pdb
+C:\Users\Administrator\Desktop\2280605780\2280605780\obj\Debug\_2280605780.Form2.resources
