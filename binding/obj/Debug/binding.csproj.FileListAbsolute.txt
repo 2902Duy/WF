@@ -1,0 +1,15 @@
+C:\Users\ThinkPad\source\repos\binding\binding\bin\Debug\binding.exe.config
+C:\Users\ThinkPad\source\repos\binding\binding\bin\Debug\binding.exe
+C:\Users\ThinkPad\source\repos\binding\binding\bin\Debug\binding.pdb
+C:\Users\ThinkPad\source\repos\binding\binding\bin\Debug\EntityFramework.dll
+C:\Users\ThinkPad\source\repos\binding\binding\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ThinkPad\source\repos\binding\binding\bin\Debug\EntityFramework.xml
+C:\Users\ThinkPad\source\repos\binding\binding\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ThinkPad\source\repos\binding\binding\obj\Debug\binding.csproj.AssemblyReference.cache
+C:\Users\ThinkPad\source\repos\binding\binding\obj\Debug\binding.Form1.resources
+C:\Users\ThinkPad\source\repos\binding\binding\obj\Debug\binding.Properties.Resources.resources
+C:\Users\ThinkPad\source\repos\binding\binding\obj\Debug\binding.csproj.GenerateResource.cache
+C:\Users\ThinkPad\source\repos\binding\binding\obj\Debug\binding.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\source\repos\binding\binding\obj\Debug\binding.csproj.Up2Date
+C:\Users\ThinkPad\source\repos\binding\binding\obj\Debug\binding.exe
+C:\Users\ThinkPad\source\repos\binding\binding\obj\Debug\binding.pdb
